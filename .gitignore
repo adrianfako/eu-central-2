@@ -1,0 +1,48 @@
+# version 2.1
+
+# certificates
+acme.json
+acme-staging.json
+
+# .env files and config
+config
+.env
+
+# logs
+*.log
+
+# venv
+.venv
+custom_nodes
+python_embeded
+
+# plaintext versions
+*.env
+**/wireguard/decrypted/*.conf
+customers/*/networking/wireguard/decrypted/*.conf
+
+# sops configuration
+.sops.yaml
+
+# large files
+*.fna.gz
+*.gz
+*.zip
+*.iso
+
+# decrypted content
+decrypted
+
+# others
+PROMPTS
+
+# encrypted content
+*.key
+*.pem
+*.key
+credentials-*
+access-token
+.key
+
+# wordpress
+wp-config.php

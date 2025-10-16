@@ -1,0 +1,18 @@
+services:
+    portainer-ce:
+        ports:
+            - 9443:9443
+        container_name: portainer
+        hostname: portainer
+        restart: always
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /mnt/ssd/portainer:/data
+        image: portainer/portainer-ce:latest
+        networks:
+            - portainer
+
+networks:
+  portainer:
+    name: portainer
+    driver: bridge
