@@ -1,4 +1,4 @@
-# version 2.1
+# version 2.3
 
 # certificates
 acme.json
@@ -29,12 +29,26 @@ customers/*/networking/wireguard/decrypted/*.conf
 *.gz
 *.zip
 *.iso
+*.CAP
+*.msi
+*.tgz
+*.exe
+*.ima
+*.B10
+*.bin
+*.ubi
+
+# documents
+*.pdf
+*.mobi
+*.epub
 
 # decrypted content
 decrypted
 
 # others
 PROMPTS
+docs
 
 # encrypted content
 *.key
